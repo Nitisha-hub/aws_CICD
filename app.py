@@ -1,18 +1,6 @@
-from flask import Flask
+num = 4
 
-app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return "Welcome to My Python CI/CD Project 🚀"
-
-@app.route("/about")
-def about():
-    return "This project is deployed using AWS CodePipeline!"
-
-@app.route("/hello")
-def hello():
-    return "Hello Nitisha 👋"
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+if num % 2 == 0:
+    print("Even number")
+else:
+    print("Odd number")
